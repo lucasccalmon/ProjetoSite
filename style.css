@@ -1,9 +1,63 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-100px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
 
 body {
     background-color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gato {
+    display: flex;
+    width: 1150px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.gato p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(80, 80, 233);
+    transition: color .2s;
+}
+
+a:hover {
+    color: rgb(10, 10, 182);
+}
+
+hr {
+    border-top: 2px solid black;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    font-style: italic;
 }
 
 h1 {
@@ -15,6 +69,47 @@ h2 {
     text-decoration:underline;
     text-align: center;
 }
-p {
-    text-align: justify;
+
+img {
+    display: block;
+    margin: 0 auto;
+    transition: transform .2s;
+  }
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.gragas:hover {
+        animation-name: bounce;
+        animation-duration: 2s;
+}
+
+.voltar {
+    display: inline-block;
+    background-color: #0088cc;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.voltar:hover {
+    color: gainsboro;
+    transform: scale(1.1);
+}
+
+.bar {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(71, 71, 71);
+    margin: 0;
+    padding: 10px;
+}
+
+.happyhour {
+    background-color: #202020;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 30px;
 }

@@ -14,7 +14,6 @@ body {
     background-color: aliceblue;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    padding: 0 0 20px 0;
     margin: 0 auto;
     text-align: center;
 }
@@ -39,12 +38,6 @@ p {
 
 a {
     text-decoration: none;
-    color: rgb(80, 80, 233);
-    transition: color .2s;
-}
-
-a:hover {
-    color: rgb(10, 10, 182);
 }
 
 hr {
@@ -80,7 +73,7 @@ img:hover {
     transform: scale(1.1);
 }
 
-.gragas:hover {
+.gragasmain:hover,.gragas:hover {
         animation-name: bounce;
         animation-duration: 2s;
 }
@@ -93,8 +86,19 @@ img:hover {
     border-radius: 10px;
     transition: transform .2s;
 }
+/* botar cor foda */
+.bebidas,.comidas,.conosco { 
+    display: inline-block;
+    background-color: #202020;
+    color: moccasin;
+    opacity: 0.9;
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: transform .2s;
+    z-index: 2;
+}
 
-.voltar:hover {
+.bebidas:hover,.comidas:hover,.conosco:hover,.voltar:hover {
     color: gainsboro;
     transform: scale(1.1);
 }
@@ -102,14 +106,67 @@ img:hover {
 .bar {
     text-decoration: none;
     color: white;
-    background-color: rgb(71, 71, 71);
+    background-color: #202020;
     margin: 0;
     padding: 10px;
 }
 
-.happyhour {
+#happyhour {
     background-color: #202020;
     color: #fff;
-    padding: 20px 0;
-    margin-top: 30px;
+    padding: 40px 0;
+    margin-top: 204px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+#happyhour h2 {
+    color: moccasin;
+    text-decoration: none;
+}
+
+.gragasmain {
+    z-index: 2;
+    
+}
+
+#home p{
+    position: relative;
+    z-index: 2;
+    font-size: 1.7em;
+    
+    
+}
+
+#home a {
+    font-size:0.6em;
+}
+
+#home::before {
+    content: ' ';
+    display: flex;
+    position:absolute;
+    left: 0;
+    top: 77px;
+    width: 100%;
+    height: 629px;    
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url(imagens/gragasbg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+ #footer {
+     color: #202020;
+     background: moccasin;
+     padding: 20px  0 23px 0;
+     font-size: 1.2em;   
+ }
+
+ #footer a {
+     color: #202020;
+ }

@@ -4,10 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
   </head>
   <body>
-    <form>
+    <header id="barra">
+      <a href="index.html"><img class="logo" src="imagens/favicon.ico" alt="logo"></a> 
+      <h1 class="bar">Taverna do Gragão</h1>
+      <nav>
+        
+        <ul class="linkmenu">
+          <li><a href="novidades.html">Novidades</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+      </nav>
+      <a class="contato" href="contato.html"><button class="botaomenu">Contato</button></a>
+    </header>
+    <hr class="cu">
+    <div class="header">
+      <h1>Cadastro</h1>
+    </div>
+      <hr style="margin-top: 0;" />
+      <div style="padding: 15px 250px;" class="Mensagem">
       <label for="nome">Primeiro Nome:</label> <br />
       <input type="text" id="nome" name="nome" required /> <br />
       <label for="sobrenome">Sobrenome:</label> <br />
@@ -32,5 +52,11 @@
       <br />
       <input type="submit" value="CADASTRAR" />
     </form>
+      </div>
+    <div style="margin-top: 228px;" id="footer">
+      <strong>
+         &copy; Calmon | <a href="https://twitter.com/ex1is" target="_blank">Twitter</a> | <a href="https://instagram.com/calmonelas" target="_blank">Instagram</a>
+       </strong>
+     </div>
   </body>
 </html>
